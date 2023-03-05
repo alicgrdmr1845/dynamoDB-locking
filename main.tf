@@ -24,8 +24,8 @@ resource "aws_instance" "ec2_example" {
 
 terraform {
     backend "s3" {
-        bucket = "jhooq-terraform-s3-bucket"
-        key    = "jhooq/terraform/remote/s3/terraform.tfstate"
+        bucket = "ali-terraform-s3-bucket"
+        key    = "alica/terraform/remote/s3/terraform.tfstate"
         region     = "eu-central-1"
        dynamodb_table  = "table name you have created"
     }
